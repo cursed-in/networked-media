@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en us">
+<html>
+    <head>
+        <title>hypersleep</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            .header {
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                font-size: 20px;
+                height: 25px;
+            }
+
+            /* creates three unequal columns that float next to each other */
+            .column {
+                float: left;
+                padding: 0px;
+                height: 600px;
+            }
+
+            /* left and right column */
+            .column.left {
+                width: 30%;
+                height: 600px;
+            }
+
+            .column.right {
+                width: 70%;
+                height: 600px;
+            }
+
+            /* clears floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .footer {
+                background-color: #fff;
+                padding: 0px;
+                text-align: center;
+            }
+
+            /* responsive layout: makes three columns stack on top of each other instead of next to each other */
+            @media (max-width: 600px) {
+                .column.side, .column.middle {
+                    width: 100%;
+                }
+            }
+        </style>  
+
+    </head>
+
+    <body>
+        <div class="header">
+            <marquee width="100%" direction="left" height="100px" scrollamount="10">
+                 Status: sleeping...
+        </marquee>
+        </div>
+        
+        <div class="row">
+            <div class="column left" style="background-color: #fff;">
+                <img src="assets/neutral.jpg" alt="Portrait" style="z-index: 2; margin-bottom: 0em; margin-top: 0em; width: 100%;">
+            <p>
+                <br />
+                > text here
+            </p>
+        </div>
+            <div class="column right" style="background-color: #fff;">
+                <img src="assets/space.jpg" alt="A blank space" usemap="#blankspace" style="width:100%;height:100%">
+                <map name="blankspace">
+                    <area shape="rect" coords="0,0,82,126" alt="Cabinet" href="cabinet.html">
+                    <area shape="circle" coords="90,58,3" alt="Flowerpot" href="flower.html">
+                    <area shape="circle" coords="124,58,8" alt="Sketchbook" href="sketchbook.html">
+                </map>
+            </div>
+        </div>
+
+        
+
+    </body>
+</html>
