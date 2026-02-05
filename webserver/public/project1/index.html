@@ -1,92 +1,71 @@
 <!DOCTYPE html>
 <html lang="en us">
 <html>
+
     <head>
-        <title>hypersleep</title>
+        <title>d r e a m s c a p e</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-
-            body {
-                font-family:Arial, Helvetica, sans-serif;
-            }
-
-            .header {
-                background-color: #000;
-                color: #fff;
-                text-align: center;
-                font-size: 20px;
-                height: 25px;
-            }
-
-            /* creates three unequal columns that float next to each other */
-            .column {
-                float: left;
-                padding: 0px;
-                height: 600px;
-            }
-
-            /* left and right column */
-            .column.left {
-                width: 30%;
-                height: 600px;
-            }
-
-            .column.right {
-                width: 70%;
-                height: 600px;
-            }
-
-            /* clears floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            .footer {
-                background-color: #fff;
-                padding: 0px;
-                text-align: center;
-            }
-
-            /* responsive layout: makes three columns stack on top of each other instead of next to each other */
-            @media (max-width: 600px) {
-                .column.side, .column.middle {
-                    width: 100%;
-                }
-            }
-        </style>  
 
     </head>
 
     <body>
         <div class="header">
             <marquee width="100%" direction="left" height="100px" scrollamount="10">
-                 Status: sleeping...
+                 Status: dreaming...
         </marquee>
         </div>
         
         <div class="row">
-            <div class="column left" style="background-color: #fff;">
-                <img src="assets/neutral.jpg" alt="Portrait" style="z-index: 2; margin-bottom: 0em; margin-top: 0em; width: 100%;">
+            <div class="column left">
+                <img src="assets/neutral.jpg" alt="Portrait" style="width: 100%; margin-top: 5px; margin-bottom: -3px;">
             <p>
                 <br />
-                > text here
+                   <span style="color: rgb(0, 17, 255)">ive been wandering here for ages
+                    <br />
+                    <br />
+                    in this endless dreamscape
+                   </span>
+                   <br />
+                   <br />
+                   > click the lost items
+                <br />
+                <br />
+                   > fill out progress bar
+                <br />
+                <br />
+                > stay
+                <br />
+                <br />
+                <br />
+                <br />
+
+                   <br />
+                   <br />
+                   <br />
+                    
             </p>
+    
         </div>
-            <div class="column right" style="background-color: #fff;">
-                <img src="assets/space.jpg" alt="A blank space" usemap="#blankspace" style="width:100%;height:100%">
-                <map name="blankspace">
-                    <area shape="rect" coords="0,0,82,126" alt="Cabinet" href="cabinet.html">
-                    <area shape="circle" coords="90,58,3" alt="Flowerpot" href="flower.html">
-                    <area shape="circle" coords="124,58,8" alt="Sketchbook" href="sketchbook.html">
-                </map>
+
+            <div class="column right">
+                <a href="cabinet.html">
+                <img src="assets/cabinet.jpg" alt=Cabinet style="width: 100px; float: right; display: inline; margin: 320px 10px 10px 20px;"></a>
+
+                <a href="flower.html">
+                <img src="assets/flower.jpg" alt=Flowerpot style="width:100px; display: inline; margin: 100px 10px 10px 20px;"></a>
+
+                <a href="sketchbook.html">
+                <img src="assets/sketchbook.jpg" alt=Sketchbook style="width:100px; float: left; display: inline; margin: 384px 20px 20px 10px"></a>
+                    
             </div>
+        </div>
+
+        <div class="footer">
+            <marquee width="100%" direction="right" height="150px" scrollamount="20">
+                 <a href="flower.html">■■■■■■■■■■■■■■■■■■■</a><a href="cabinet.html">■■■■■■■■■■■■■■■■■■■</a><a href="sketchbook.html">■■■■■■■■■■■■■■■■■■■</a>
+        </marquee>
         </div>
 
         
